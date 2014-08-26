@@ -6,7 +6,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+      "public": false
   },
   "AccessToken": {
     "public": false,
@@ -24,7 +25,7 @@
     "public": false,
     "dataSource": "db"
   },
-  "poi": {
+  "Poi": {
     "public": true,
     "dataSource": "db"
   }

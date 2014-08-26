@@ -1,24 +1,30 @@
 {
-  "name": "poi",
-  "base": "PersistedModel",
-  "properties": {
-    "name": {
-      "type": "string",
-      "required": true
+    "name": "Poi",
+    "base": "PersistedModel",
+    "properties": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "geo": {
+            "type": "GeoPoint"
+        }
     },
-    "geo": {
-      "type": "GeoPoint"
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "principalType": "ROLE",
-      "principalId": "$authenticated",
-      "permission": "ALLOW",
-      "accessType": "WRITE"
-    }
-  ],
-  "methods": []
+    "validations": [],
+    "relations": {},
+    "acls": [
+        {
+            "principalType": "ROLE",
+            "principalId": "$unauthenticated",
+            "permission": "DENY",
+            "accessType": "WRITE"
+        },
+        {
+            "principalType": "ROLE",
+            "principalId": "$unauthenticated",
+            "permission": "DENY",
+            "accessType": "EXECUTE"
+        }
+    ],
+    "methods": []
 }
