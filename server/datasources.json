@@ -1,7 +1,5 @@
 {
-  "db": {
-    "url": "mongodb://localhost:27017/cronos-care",
-    "name": "db",
-    "connector": "mongodb"
-  }
+    "db": {
+        "defaultForType": "db"
+    }
 }

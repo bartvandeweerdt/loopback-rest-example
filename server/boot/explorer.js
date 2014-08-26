@@ -1,5 +1,5 @@
 module.exports = function mountLoopBackExplorer(server) {
-    if (!app.get('isDevEnv')) return;
+    if (!server.get('isDevEnv')) return;
 
     var explorer;
     try {
