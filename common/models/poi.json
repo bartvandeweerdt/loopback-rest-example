@@ -2,16 +2,35 @@
     "name": "Poi",
     "base": "PersistedModel",
     "properties": {
+        "title": {
+            "type": "String"
+        },
+        "details": {
+            "type": "String"
+        },
         "name": {
-            "type": "string",
+            "type": "String",
             "required": true
         },
+        "url": {
+            "type": "String"
+        },
+        "category": {
+            "type": "String"
+        },
         "geo": {
-            "type": "GeoPoint"
+            "lat": "Number",
+            "lng": "Number"
         }
     },
+    "strict": true,
     "validations": [],
-    "relations": {},
+    "relations": {
+        "poi_address": {
+            "type": "embedsOne",
+            "model": "Address"
+        }
+    },
     "acls": [
         {
             "principalType": "ROLE",

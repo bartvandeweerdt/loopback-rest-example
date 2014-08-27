@@ -1,32 +1,36 @@
 {
-  "_meta": {
-    "sources": [
-      "../common/models",
-      "./models"
-    ]
-  },
-  "User": {
-    "dataSource": "db",
-      "public": false
-  },
-  "AccessToken": {
-    "public": false,
-    "dataSource": "db"
-  },
-  "ACL": {
-    "public": false,
-    "dataSource": "db"
-  },
-  "RoleMapping": {
-    "public": false,
-    "dataSource": "db"
-  },
-  "Role": {
-    "public": false,
-    "dataSource": "db"
-  },
-  "Poi": {
-    "public": true,
-    "dataSource": "db"
-  }
+    "_meta": {
+        "sources": [
+            "../common/models",
+            "./models"
+        ]
+    },
+    "User": {
+        "dataSource": "db",
+        "public": false
+    },
+    "AccessToken": {
+        "public": false,
+        "dataSource": "db"
+    },
+    "ACL": {
+        "public": false,
+        "dataSource": "db"
+    },
+    "RoleMapping": {
+        "public": false,
+        "dataSource": "db"
+    },
+    "Role": {
+        "public": false,
+        "dataSource": "db"
+    },
+    "Poi": {
+        "public": true,
+        "dataSource": "db"
+    },
+    "Address": {
+        "public": false,
+        "dataSource": "db"
+    }
 }

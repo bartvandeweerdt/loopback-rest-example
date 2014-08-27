@@ -1,0 +1,14 @@
+{
+    "name": "Address",
+    "base": "PersistedModel",
+    "properties": {
+        "street": "String",
+        "city": "String",
+        "postalcode": "String"
+    },
+    "strict": true,
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": []
+}
